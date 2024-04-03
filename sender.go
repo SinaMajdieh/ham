@@ -1,10 +1,7 @@
 package ham
 
 import (
-	"fmt"
-
 	"strconv"
-	"strings"
 
 	. "github.com/SinaMajdieh/ham/common"
 	file "github.com/SinaMajdieh/ham/file"
@@ -47,32 +44,20 @@ func blockalize(message string) []Block {
 }
 
 // Arranging the blocks of the message so that if a sequence of bits were flipped the message remain error robust
-func arrangeBlocks(blocks []Block) []int {
-	arranged_message := []int{}
-
-	// Arranging the first bit of every block and then the second bit of every block and ...
-	for i := 0; i < BlockSize; i++ {
-		for _, b := range blocks {
-			arranged_message = append(arranged_message, b[i])
-		}
-	}
-
-	return arranged_message
-}
-
-// Arranging the blocks of the message so that if a sequence of bits were flipped the message remain error robust
-// Returning a string
 func arrangeBlocksToString(blocks []Block) string {
+	arranged_message := ""
 	// setting the remaining storage to be zero
 	if len(blocks) != BlocksInStorage {
 		FillStorage(&blocks)
 	}
-	// arranging the blocks into an array of ints
-	arranged_blocks := arrangeBlocks(blocks)
-	// converting to string
-	message := strings.Trim(strings.Join(strings.Fields(fmt.Sprint(arranged_blocks)), ""), "[]")
+	// Arranging the first bit of every block and then the second bit of every block and ...
+	for i := 0; i < BlockSize; i++ {
+		for _, b := range blocks {
+			arranged_message += strconv.Itoa(b[i])
+		}
+	}
 
-	return message
+	return arranged_message
 }
 
 // Convert the message into an error robust message
