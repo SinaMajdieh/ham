@@ -8,7 +8,7 @@ import (
 
 const (
 	// working directory
-	working_directory = "workspace/"
+	working_directory = ""
 	// default ext for error correcting files
 	default_ext = ".ecor"
 )
