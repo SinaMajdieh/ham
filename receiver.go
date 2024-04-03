@@ -20,10 +20,10 @@ func rearrangeBlocks(message string) []Block {
 		}
 
 		// Detecting the noise if there is any and correcting it
-		noise_position := block.CorrectNoise()
-		if noise_position != 0 {
-			println("There was a noise in INDEX ", (i*BlockSize)+noise_position)
-		}
+		_ = block.CorrectNoise()
+		// if noise_position != 0 {
+		// 	println("There was a noise in INDEX ", (i*BlockSize)+noise_position)
+		// }
 
 		// if the block is a leading zero breaking out of the loop
 		if block.IsZero() {
