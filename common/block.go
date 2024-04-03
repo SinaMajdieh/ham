@@ -16,7 +16,7 @@ const (
 
 // the parity bits
 var (
-	parity_bit = [...]int{127, 64, 32, 16, 8, 4, 2, 1}
+	parity_bit = [...]int{128, 64, 32, 16, 8, 4, 2, 1}
 )
 
 type Block [BlockSize]int
