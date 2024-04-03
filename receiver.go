@@ -3,8 +3,8 @@ package ham
 import (
 	"strconv"
 
-	. "github.com/ham/common"
-	file "github.com/ham/file"
+	. "github.com/SinaMajdieh/ham/common"
+	file "github.com/SinaMajdieh/ham/file"
 )
 
 // Rearrange all the bits to their corresponding blocks, removing the noise if there are any and ignoring the leading zero blocks

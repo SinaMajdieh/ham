@@ -6,8 +6,8 @@ import (
 	"strconv"
 	"strings"
 
-	. "github.com/ham/common"
-	file "github.com/ham/file"
+	. "github.com/SinaMajdieh/ham/common"
+	file "github.com/SinaMajdieh/ham/file"
 )
 
 // Constructing the message in to blocks of BlockSize
