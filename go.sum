@@ -1,4 +1,4 @@
-github.com/SinaMajdieh/ham/common v0.0.0-20240403132548-556333eccb04 h1:RS3LR/MxPoIwvIsh9mXTZVpeUwuPX4qlX89W7gH2+m4=
-github.com/SinaMajdieh/ham/common v0.0.0-20240403132548-556333eccb04/go.mod h1:IiM8RGt7eTdzTNkNmg9aWFI2+AI/ERXSG6S0G57BvL4=
-github.com/SinaMajdieh/ham/file v0.0.0-20240403132548-556333eccb04 h1:WYqAtzT/04+CQR2wWShnusheNtx9cN3tCgDkajBxbAE=
-github.com/SinaMajdieh/ham/file v0.0.0-20240403132548-556333eccb04/go.mod h1:1PxYnDGuZPETMZEFEQfwcx05i1CdudPAWGNuryEkmQw=
+github.com/SinaMajdieh/ham/common v0.0.0-20240403163417-fbd92146fd1d h1:6/tsWjvy4aFlNxV8tJaFBS7M/2McFlacwyOdxUAJde8=
+github.com/SinaMajdieh/ham/common v0.0.0-20240403163417-fbd92146fd1d/go.mod h1:IiM8RGt7eTdzTNkNmg9aWFI2+AI/ERXSG6S0G57BvL4=
+github.com/SinaMajdieh/ham/file v0.0.0-20240403163417-fbd92146fd1d h1:yiTWYn+tkqABcjWY6iwk/o0KT7+3R3E9BpvgBwpv+Ys=
+github.com/SinaMajdieh/ham/file v0.0.0-20240403163417-fbd92146fd1d/go.mod h1:1PxYnDGuZPETMZEFEQfwcx05i1CdudPAWGNuryEkmQw=
