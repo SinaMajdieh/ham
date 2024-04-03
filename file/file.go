@@ -10,7 +10,7 @@ const (
 	// working directory
 	working_directory = ""
 	// default ext for error correcting files
-	default_ext = ".ecor"
+	default_ext = ".ham"
 )
 
 // Ensuring the file named name exists
