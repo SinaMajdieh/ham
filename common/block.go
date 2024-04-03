@@ -7,16 +7,16 @@ import (
 
 const (
 	// the size of a block
-	BlockSize = 16
+	BlockSize = 256
 	// number of bits
-	NumberOfBits = 4
+	NumberOfBits = 8
 	// total number of blocks to be saved
-	BlocksInStorage = 50000
+	BlocksInStorage = 3125
 )
 
 // the parity bits
 var (
-	parity_bit = [...]int{8, 4, 2, 1}
+	parity_bit = [...]int{127, 64, 32, 16, 8, 4, 2, 1}
 )
 
 type Block [BlockSize]int
