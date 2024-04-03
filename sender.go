@@ -61,7 +61,7 @@ func arrangeBlocksToString(blocks []Block) string {
 }
 
 // Convert the message into an error robust message
-// with the ext of .ecor
+// with the ext of .ham
 // saving it into a file
 func HamIt(input string, inputIsFileName bool, saveOutputAsFile bool) string {
 	var message string
