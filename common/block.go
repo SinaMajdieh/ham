@@ -73,7 +73,7 @@ func (block Block) checkParities() []int {
 	// adding the count of that group
 	for i := 1; i < BlockSize; i++ {
 		if block[i] == 1 {
-			binary_string := fmt.Sprintf("%04b", i)
+			binary_string := fmt.Sprintf("%08b", i)
 			for j := NumberOfBits - 1; j >= 0; j-- {
 				if string(binary_string[j]) == "1" {
 					parity_count[j]++
