@@ -7,16 +7,16 @@ import (
 
 const (
 	// the size of a block
-	BlockSize = 256
+	BlockSize = 16
 	// number of bits
-	NumberOfBits = 8
+	NumberOfBits = 4
 	// total number of blocks to be saved
-	BlocksInStorage = 3125
+	BlocksInStorage = 50000
 )
 
 // the parity bits
 var (
-	parity_bit = [...]int{128, 64, 32, 16, 8, 4, 2, 1}
+	parity_bit = [...]int{8, 4, 2, 1}
 )
 
 type Block [BlockSize]int
@@ -73,7 +73,7 @@ func (block Block) checkParities() []int {
 	// adding the count of that group
 	for i := 1; i < BlockSize; i++ {
 		if block[i] == 1 {
-			binary_string := fmt.Sprintf("%08b", i)
+			binary_string := fmt.Sprintf("%04b", i)
 			for j := NumberOfBits - 1; j >= 0; j-- {
 				if string(binary_string[j]) == "1" {
 					parity_count[j]++
